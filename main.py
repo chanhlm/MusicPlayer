@@ -4,6 +4,8 @@ import os
 # Đường dẫn đến thư mục chứa các file âm thanh
 sound_dir = "Sounds/"
 
+st.set_page_config(page_title="Play Music", layout="wide")
+
 # Lấy danh sách tất cả các file âm thanh trong thư mục Sound và sắp xếp
 audio_files = sorted([f for f in os.listdir(sound_dir) if f.endswith(('.mp3', '.wav'))])
 
